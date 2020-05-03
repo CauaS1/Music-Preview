@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Monstserrat', sans-serif;
+  background: #282828;
+  color: #fff;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+header h1 {
+  margin: 30px 0 30px 0;
+  text-align: center;
+  font-size: 40px;
+}
+
+header p {
+  font-size: 20px;
+  text-align: center;
+}
+
+.pads {
+  width: 100%;
+  display: flex;
+}
+
+.pads > div { /*reference all divs inside the pads */
+  width: 100px;
+  height: 200px;
+  flex: 1;
+  cursor: pointer;
+}
+
+.pad1 {
+  background: #c6a64c;
+}
+
+.pad2 {
+  background: #d9787a;
+} 
+
+.pad3 {
+  background: #1e1e1e;
+}
+
+.pad4 {
+  background: #d5013c;
+}
+
+.pad5 {
+  background: #1a2119;
+}
+
+.pad6 {
+  background: #8a0000;
+} 
+
+
+@keyframes show {
+  0% {
+    opacity: 0;
+ }
+ 
+  50% {
+    bottom: 40%;
+    opacity: 1;
+   }
+  100% {
+    opacity: 0;   
+  }
+}
+
+.visual {
+  display: flex;
+  justify-content: center;
+}
+
+.visual > div {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  bottom: 0%;
+  z-index: -1;
+  background: linear-gradient();
+}
+
